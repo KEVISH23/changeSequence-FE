@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row py-2">
+    <div class="col-xl-8 col-lg-6 col-12 mt-2">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-xl-4 col-lg-6 col-12 mt-2">
+      <div class="mobile">
+        <div class="phone">
+          <div class="phone-mirror">
+            <div class="topWrapper">
+              <div class="camera"></div>
+              <div class="line-rec"></div>
+            </div>
+            <div class="container-fluid">
+               
+              <!-- <ul class="list-group">
+                <li
+                  class="list-group-item list-group-flush"
+                  *ngFor="let data of sectionData"
+                >
+                <div class="d-flex">
+                    <h4>{{ data.sectionName }}</h4>
+
+                </div>
+                  <ul class="list-group mb-3 d-flex">
+                    <li
+                      class="list-group-item list-group-flush"
+                      *ngFor="let items of data.contentDetails"
+                    >
+                      {{ items.itemsDetails.title }}
+                    </li>
+                  </ul>
+                  <div class="everyContent"></div>
+                </li>
+              </ul> -->
+              <div class="list-group">
+                <h5 class="text-center text-white">Garam Sitaro</h5>
+             
+              <div class="py-2" *ngFor="let data of sectionData">
+                
+                <div class="d-flex justify-content-between">
+                    <h4 class="text-white">{{data.sectionName}}</h4>
+                    <button class="btn" (click)="goToParticularSection(data._id)">
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                    </button>
+                </div>
+
+                <div class="mt-2 d-flex gap-2">
+                    <div class="box" *ngFor="let items of data.contentDetails">
+                        <p>{{items.itemsDetails.title}}</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

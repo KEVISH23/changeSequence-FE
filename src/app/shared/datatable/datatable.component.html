@@ -1,0 +1,10 @@
+<ag-grid-angular
+style="height: 616px;"
+class="ag-theme-quartz"
+[rowDragManaged]="true"
+[rowData]="rowData"
+(rowDragEnd)="rowEnded($event)"
+[columnDefs]="colDefs" 
+[defaultColDef]="defaulColDefs"
+[rowHeight]="60"
+/>

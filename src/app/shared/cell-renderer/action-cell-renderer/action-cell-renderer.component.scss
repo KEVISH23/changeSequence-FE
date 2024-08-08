@@ -1,0 +1,18 @@
+.btn-outline-primary{
+    border:1px solid #638320;
+    color: #638320;
+
+    &:hover{
+        background-color: #475E17 ;
+        color:rgb(241, 241, 241) !important
+    }
+}
+.btn-outline-danger{
+    border:1px solid #B21031;
+    color: #B21031;
+
+    &:hover{
+        background-color: #B21031 ;
+        color:rgb(241, 241, 241) !important
+    }
+}

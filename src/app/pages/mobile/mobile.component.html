@@ -1,0 +1,28 @@
+<div class="mobile" *ngIf="sectionData">
+  <div class="phone">
+    <div class="phone-mirror">
+      <div class="topWrapper">
+        <div class="camera"></div>
+        <div class="line-rec"></div>
+      </div>
+      <div class="container-fluid">
+        <ul class="list-group">
+          <li
+            class="list-group-item list-group-flush"
+            *ngFor="let data of sectionData"
+          >
+            <h4>{{ data.sectionName }}</h4>
+            <ul class="list-group mb-3 d-flex">
+              <li
+                class="list-group-item list-group-flush"
+                *ngFor="let items of data.contentDetails"
+              >
+                {{ items.itemsDetails.title }}
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
